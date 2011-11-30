@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tim Crowe</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="DC.creator" content="Tim Crowe - http://timmyfury.com" />
+		<meta name="DC.publisher" content="Tim Crowe" />
+		<meta name="DC.language" content="en" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+		
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<link rel="stylesheet" href="./normalize.css" type="text/css">
+		<link rel="stylesheet" href="./styles.css" type="text/css">
+
+		<script src="./jquery-1.7.min.js" type="text/javascript"></script>
+		<script src="./behavior.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header>
+		    <img src="./avatar.jpg" alt="Tim Crowe" />
+
+			<hgroup>
+				<h1>Tim Crowe</h1>
+				<h2><a href="mailto:tim.crowe@timmyfury.com">tim.crowe@timmyfury.com</a></h2>
+				<h2><a href="tel:+1-484-557-9198">(484) 557-9198</a></h2>
+				<h2><a href="https://twitter.com/timmyfury">@timmyfury</a></h2>
+			</hgroup>
+
+			<nav>
+				<ul>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#play">Play</a></li>
+					<li><a href="#school">School</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="skills">
+			<h2>Skills</h2>
+
+			<dl>
+				<dt class="c-sharp dot-net">C#/.Net</dt>
+				<dd class="c-sharp dot-net rating-2"><em>2/10</em></dd>
+
+				<dt class="css css3">CSS/CSS3</dt>
+				<dd class="css css3 rating-8"><em>8/10</em></dd>
+
+				<dt class="data-modeling">Data Modeling</dt>
+				<dd class="data-modeling rating-6"><em>6/10</em></dd>
+
+				<dt class="dojo">Dojo Toolkit</dt>
+				<dd class="dojo rating-8"><em>8/10</em></dd>
+
+				<dt class="flash">Flash</dt>
+				<dd class="flash rating-3"><em>3/10</em></dd>
+
+				<dt class="xhtml html5">xHTML/HTML5</dt>
+				<dd class="xhtml html5 rating-8"><em>8/10</em></dd>
+
+				<dt class="javascript">JavaScript</dt>
+				<dd class="javascript rating-9"><em>9/10</em></dd>
+
+				<dt class="jquery">jQuery</dt>
+				<dd class="jquery rating-8"><em>8/10</em></dd>
+
+				<dt class="mysql">MySQL</dt>
+				<dd class="mysql rating-7"><em>7/10</em></dd>
+
+				<dt class="php ee">PHP/EE</dt>
+				<dd class="php ee rating-5"><em>5/10</em></dd>
+
+				<dt class="python django">Python/Django</dt>
+				<dd class="python django rating-7"><em>7/10</em></dd>
+
+				<dt class="ruby rails">Ruby/Rails</dt>
+				<dd class="ruby rails rating-5"><em>5/10</em></dd>
+
+				<dt class="svg canvas">SVG/Canvas</dt>
+				<dd class="svg canvas rating-6"><em>6/10</em></dd>
+			</dl>
+		</section>
+
+		<section id="work">
+			<h2>Work</h2>
+
+			<section>
+				<h3><a href="http://www.ticketleap.com/">TicketLeap</a></h3>
+				
+				<dl>
+					<dt>Title</dt> <dd>Senior Web Developer</dd>
+					<dt>Type</dt> <dd>Full-time</dd>
+					<dt>Dates</dt> <dd><time datetime="">Oct 2010</time> &ndash; <time datetime="">present</time></dd>
+				</dl>
+
+				<ul>
+					<li>Implemented ticketing and marketing features using the Django, Python Web framework.
+						<ul>
+							<li><strong>Tracking Codes and Visitor Statistics</strong></li>
+							<li><strong>Registration Forms</strong></li>
+							<li><strong>Email Blast</strong></li>
+						</ul>
+					</li>
+					<li>Developed namespace to encapsulate JavaScript modules for various uses.
+						<ul>
+							<li><strong>Configuration</strong>: a module that allows values to be accessed globally 
+								and allows other components and plugins to trigger actions asynchronously once particular 
+								values have been set. This utilizes the publish/subscribe event model.</li>
+							<li><strong>Analytics</strong>: this module defers the loading of and logging to Google Analytics 
+								to prevent the Google Analytics library from slowing down the loading of our app and 
+								shortening the user's perceived load time of pages.</li>
+							<li><strong>Components</strong>: a general use class that provides a means of defining 
+								and encapsulating the JavaScript functionality of pages or shared components of pages.
+								This limits the scope of selectors being used, reduces side effects of reusing code in a
+								large application and manages the execution of onload events to reduce the overhead of 
+								JavaScript functionality overall.</li>
+						</ul>
+					</li>
+					<li>Developed jQuery plugins that utilize progressive enhancement techniques.
+						<ul>
+							<li><strong>Credit card input</strong>: an enhancement to text inputs that indicates 
+								what type of card was entered based on the credit card number.</li>
+							<li><strong>Credit card swiper</strong>: using a track reader which emulates a keyboard,
+								this control parses the track data of a card and displays the card holders name, card 
+								number, card type and expiration date. It also saves the track data in a hidden input 
+								for submission to our payment system and provides user feedback during processing, 
+								success and error. This control supports keyboard navigation as if it were a native 
+								form element.</li>
+							<li><strong>Information Panes</strong>: similar to a tabbed container, this control is 
+								used to allow a configuration information to be organized by category, while limiting 
+								what is immediately visible. Users can switch between panes to view additional 
+								settings.</li>
+							<li><strong>Fancy Select</strong>: an enhanced select box that converts the native select 
+								element into a list of radio or check boxes. This control includes, a contextual label 
+								that indicates what is selected, collapsible option groups, option filtering and buttons 
+								to select or unselect all visible options.</li>
+						</ul>
+					</li>
+					<li>Integrated Facebook and Twitter APIs to integrate social functionality.</li>
+					<li>Utilized CSS3 to replace image replacement to achieve aesthetic.</li>
+					<li>Designed and built mobile version of our app utilizing HTML5 and responsive design techniques.</li>
+					<li>Architected presentation layer patterns to easily manage a high volume of HTML, CSS, 
+						JavaScript and image assets.</li>
+					<li>Managed releases.</li>
+					<li>Integrated Amazon Web Services including Amazon Simple Queue Service (SQS), Amazon Simple Storage 
+						Service (S3), Amazon Simple Email Service (SES).</li>
+					<li>Worked with deployment on Amazon Web Services using Elastic Load Balancing, Amazon Elastic 
+						Compute Cloud (EC2), Amazon Route 53 for DNS, Amazon Relational Database Service (RDS) and 
+						CloudFront for content delivery.</li>
+					<li>Implemented an automated deployment process for marketing related content using Jekyll 
+						&mdash; a blog-aware, static site generator &mdash; allowing updates to marketing content 
+						to be updated and released independent of our main platform.</li>
+					<li>Planned feature specifications based on requirements gathered from customers and 
+						internal stakeholders.</li>
+					<li>Helped mold agile development project management workflow allowing us to deliver up to four 
+						new features every three weeks.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>NerdNodes</h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Developer, Principal</dd>
+					<dt>Type</dt> <dd>Freelance</dd>
+					<dt>Dates</dt> <dd><time datetime="">May 2010</time> &ndash; <time datetime="">present</time></dd>
+				</dl>
+
+				<ul>
+					<li>Managed client relationships.</li>
+					<li>Scheduled delivery schedules.</li>
+					<li>Worked with freelancers to complete contracted work.</li>
+					<li>Submitted invoices and managed financial aspects of the company.</li>
+					<li>Wrote statements of work.</li>
+				</ul>
+
+				<h4>Automated Data Processing Inc.</h4>
+				<ul>
+					<li>Evangelized the adoption of the Revolution UI standards and widget library.</li>
+					<li>Evangelized the benefits of and adherence to web standards.</li>
+					<li>Consulted with internal development teams to assist in planning the integration of the Revolution UI Library
+						into existing development environments varying from Java to .NET.</li>
+					<li>Developed custom widgets using the Dojo JavaScript Toolkit and the Dijit widget system.
+						<ul>
+							<li><strong>Wizard</strong></li>
+							<li><strong>DualMultiSelect</strong></li>
+							<li><strong>App</strong></li>
+						</ul>
+					</li>
+				</ul>
+
+				<h4>TBC Corporation</h4>
+				<ul>
+					<li>Developed C#/.Net site core that allowed seven basic marketing sites to be implemented using an 
+						identical codebase with a simple configuration changes.</li>
+					<li>Converted comps to xHTML/CSS. All seven sites used identical markup but different stylesheets.</li>
+				</ul>
+
+				<h4><a href="http://nod.org/">National Organization on Disability</a></h4>
+				<ul>
+					<li>Implemented ExpressionEngine 1.7.</li>
+					<li>Provided automated deployment process.</li>
+					<li>Developed an ExpressionEngine extension that overrides the native pagination functionality to use 
+						the value in the get string for the page. <a href="http://github.com/timmyfury/EE-Query-String-Pagination">The 
+						source</a> is available on github.</li>
+				</ul>
+
+				<h4><a href="http://johnsterlingruth.com/">John Sterling Ruth Photography</a></h4>
+				<ul>
+					<li>Developed a simple admin for managing images, videos and galleries.</li>
+					<li>Provided XML API interface for flash based version of the site.</li>
+					<li>Implemented mobile version of the site using jQuery Mobile.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://happycog.com/">Happy Cog Philadelphia</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Presentation Layer Developer</dd>
+					<dt>Type</dt> <dd>Contract</dd>
+					<dt>Dates</dt> <dd><time datetime="">Aug 2009</time> &ndash; <time datetime="">May 2010</time></dd>
+				</dl>
+
+				<h4>Automated Data Processing Inc.</h4>
+				<ul>
+					<li>Implemented UI component library using Dojo JavaScript Framework</li>
+					<li>Produced extensive documentation site and example library to help kickstart implementation.</li>
+					<li>Extended the entire Dijit widget library and a significant amount of the Dojox widget library into a custom 
+						namespace to ensure forward compatibility and enforcement of Revolution UI standards.</li>
+					<li>Gathered full business requirements based on UI concept screens.</li>
+					<li>Developed custom Dijit widgets for implementation in diverse environments
+						<ul>
+							<li><strong>MegaMenu</strong></li>
+							<li><strong>Shell</strong></li>
+							<li><strong>AppContainer</strong></li>
+						</ul>
+					</li>
+				</ul>
+
+				<h4>Build-a-Bear Workshop</h4>
+				<ul>
+					<li>Converted comps to xHTML/CSS</li>
+					<li>Developed jQuery plug-ins</li>
+				</ul>
+
+				<h4>Daily Kos</h4>
+				<ul>
+					<li>Converted Photoshop comps to xHTML/CSS</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://gamervision.com/">Gamervision LLC</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Ruby Developer, Engineer</dd>
+					<dt>Type</dt> <dd>Full-time</dd>
+					<dt>Dates</dt> <dd><time datetime="">Oct 2008</time> &ndash; <time datetime="">Aug 2009</time></dd>
+				</dl>
+
+				<ul>
+					<li>Negotiated contracts</li>
+					<li>Planned and implemented API integration with Viddler video service.</li>
+					<li>Developed data acquisition module for extensive game database</li>
+					<li>Implemented agile development workflow</li>
+					<li>Instituted social media strategy increasing unique visitor traffic by approximately 10% monthly</li>
+					<li>Designed ad sales packages and sold ads</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://www.empathylab.com/">Empathy Lab</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>PHP Developer</dd>
+					<dt>Type</dt> <dd>Contract</dd>
+					<dt>Dates</dt> <dd><time datetime="">Apr 2008</time> &ndash; <time datetime="">Oct 2008</time></dd>
+				</dl>
+
+				<h4>MTV Networks</h4>
+				<ul>
+					<li>Developed social network called ilovetv.com for VH1 <em>never launched</em></li>
+					<li>Integrated with REST API for Flux user authentication system</li>
+					<li>JavaScript API for Flux UGC contribution library</li>
+					<li>SOAP API for Crowd Factory Community Platform</li>
+					<li>Google Search Appliance API</li>
+					<li>Designed and developed simple PHP MVC framework</li>
+					<li>Managed client relationship</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://www.razorfish.com/">Razorfish</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Senior Presentation Layer Developer</dd>
+					<dt>Type</dt> <dd>Full-time</dd>
+					<dt>Dates</dt> <dd><time datetime="">Feb 2008</time> &ndash; <time datetime="">Apr 2008</time></dd>
+				</dl>
+
+				<ul>
+					<li>Converted Photoshop comps to XHTML/CSS</li>
+					<li>Developed jQuery plug-ins</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://www.electronicink.com/">Electronic Ink</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Senior Interactive Technologist</dd>
+					<dt>Type</dt> <dd>Full-time</dd>
+					<dt>Dates</dt> <dd><time datetime="">Apr 2006</time> &ndash; <time datetime="">Feb 2008</time></dd>
+				</dl>
+
+				<ul>
+					<li>Implemented source control system</li>
+					<li>Mentored and trained new hire, junior and intern developers</li>
+					<li>Researched and learned new technologies</li>
+					<li>Competed in Microsoft sponsored Silverlight competition, Phizzpop</li>
+					<li>Received co-worker recognition with awarding of Electronic Ink Innovation Award</li>
+				</ul>
+
+				<h4>Gamervision LLC</h4>
+				<ul>
+					<li>Gathered and analyzed user requirements and wrote functional specification</li>
+					<li>Architected data and business logic layers of social networking application</li>
+					<li>Managed hosting relationship and application deployment</li>
+				</ul>
+
+				<h4>DecisionOne</h4>
+				<ul>
+					<li>Installed, configured and customized Expression Engine content management system</li>
+					<li>Planned and executed presentation tier development</li>
+					<li>Integrated Great Plains HRMS API</li>
+				</ul>
+
+				<h4>MetroCorp Marketing</h4>
+				<ul>
+					<li>Implemented and customized Expression Engine content management system</li>
+					<li>Converted design comps into XHTML/CSS templates</li>
+					<li>Managed client relationship</li>
+				</ul>
+
+				<h4>Bryn Mawr College</h4>
+				<ul>
+					<li>Developed XHTML/CSS templates</li>
+					<li>Implemented custom select control with JavaScript and CSS</li>
+					<li>Developed jQuery plug-ins</li>
+				</ul>
+
+				<h4>Magee Rehabilitation</h4>
+				<ul>
+					<li>Conducted user interviews and focus groups and participated in user observation</li>
+					<li>Gathered Requirements and inventory of data generation points</li>
+					<li>Evaluated current state of data collection</li>
+					<li>Researched and recommended technologies and processes to streamline workflow</li>
+				</ul>
+
+				<h4>Penske Truck Leasing</h4>
+				<ul>
+					<li>Evaluated design deliverables for implementability and technical limitations</li>
+				</ul>
+
+				<h4>Electronic Ink Estimator</h4>
+				<ul>
+					<li>Gathered feature requirements and translated them into functionality</li>
+					<li>Designed Database schema</li>
+					<li>Deployed application</li>
+					<li>Developed business logic layer</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://www.dccc.edu/">Delaware County Community College</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Web Services Specialist</dd>
+					<dt>Type</dt> <dd>Full-time</dd>
+					<dt>Dates</dt> <dd><time datetime="">Aug 2004</time> &ndash; <time datetime="">Apr 2006</time></dd>
+				</dl>
+
+				<ul>
+					<li>Analyzed user requirements, planned information architecture scheme and guided visual style</li>
+					<li>Developed and implemented content administration modules</li>
+					<li>Designed and Developed multimedia tutorials and virtual tours with Flash</li>
+					<li>Integrated external content via RSS and Google Maps API</li>
+					<li>Assisted in developing marketing efforts and maintained content of institution wide website</li>
+					<li>Performed server administration duties</li>
+					<li>Planned, implemented and maintained multi-campus photo ID system</li>
+					<li>Mentored and trained new hire, junior and intern developers</li>
+					<li>Trained faculty and staff in basic computing concepts, HTML and other web related technologies</li>
+					<li>Promoted from Multimedia Technology Support Specialist in August 2004</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://fi.edu/">Franklin Institute Science Museum</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Manager of Camp-in program</dd>
+					<dt>Type</dt> <dd>Part-time</dd>
+					<dt>Dates</dt> <dd><time datetime="">Oct 2000</time> &ndash; <time datetime="">April 2006</time></dd>
+				</dl>
+
+				<ul>
+					<li>Delivered welcome address to parents and children spending the night in the museum.</li>
+					<li>Coordinated the schedules and movement of up to 700 campers per night.</li>
+					<li>Performed educational science shows.</li>
+					<li>Managed 15-20 staff per night.</li>
+					<li>Yelled at a lot of children</li>
+					<li>Provided first aid to campers.</li>
+					<li>Made coffee.</li>
+					<li>Slept on the floor of the museum.</li>
+				</ul>
+			</section>
+		</section>
+
+		<section id="play">
+			<h2>Play</h2>
+
+			<section>
+				<h3><a href="http://eatingcrowe.com/">Eating Crowe</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>The Talent</dd>
+					<dt>Dates</dt> <dd><time datetime="">May 2009</time> &ndash; <time datetime="">Nov 2009</time></dd>
+				</dl>
+
+				<p>Born out of my desire to share my love of food, this cooking show aimed to show viewers that complex food was not out
+					of their reach.</p>
+
+				<ul>
+					<li>Organized and planned episode shoots.</li>
+					<li>Coordinated events.</li>
+					<li>Managed marketing efforts.</li>
+					<li>Cooked and made jokes.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://canhasdomain.com/">canhasdomain</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Developer</dd>
+				</dl>
+
+				<p>A simple Sinatra application that allows you to find out whether a domain name is available. This is done by parsing the whois 
+					information for a url. <a href="http://github.com/timmyfury/canhasdomain">The source</a> is available on github.</p>
+
+				<ul>
+					<li>Conceived feature for the site.</li>
+					<li>Developed Sinatra app.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3><a href="http://philamade.com/">PhilaMade</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>SiteNite Developer</dd>
+					<dt>Dates</dt> <dd><time datetime="">Apr 16 2006</time></dd>
+				</dl>
+			</section>
+
+			<section>
+				<h3><a href="http://cantyshanty.com/">Canty Shanty</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Creator, Maintainer</dd>
+				</dl>
+			</section>
+
+			<section>
+				<h3><a href="http://bananusinfo.info/">Bananus Info</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Creator</dd>
+				</dl>
+			</section>
+
+			<section>
+				<h3><a href="http://operationdandelion.com/">Operation Dandelion</a></h3>
+
+				<dl>
+					<dt>Title</dt> <dd>Creator</dd>
+				</dl>
+			</section>
+		</section>
+
+		<section id="school">
+			<h2>School</h2>
+
+			<section>
+				<h3><a href="http://www.artinstitutes.edu/philadelphia/">Art Institute of Philadelphia</a></h3>
+
+				<dl>
+					<dt>Degree</dt> <dd>Incomplete</dd>
+					<dt>Program</dt> <dd>Culinary Arts</dd>
+					<dt>Dates</dt> <dd><time datetime="">May 2008</time> &ndash; <time datetime="">Nov 2009</time></dd>
+				</dl>
+			</section>
+
+			<section>
+				<h3><a href="http://www.temple.edu/">Temple University</a></h3>
+
+				<dl>
+					<dt>Degree</dt> <dd>Incomplete</dd>
+					<dt>Program</dt> <dd>Management Information Systems</dd>
+					<dt>Dates</dt> <dd><time datetime="">June 2004</time> &ndash; <time datetime="">Aug 2006</time></dd>
+				</dl>
+			</section>
+
+			<section>
+				<h3><a href="http://www.dccc.edu/">Delaware County Community College</a></h3>
+
+				<dl>
+					<dt>Degree</dt> <dd>ABA</dd>
+					<dt>Program</dt> <dd>Business Administration</dd>
+					<dt>Dates</dt> <dd><time datetime="">Jan 2002</time> &ndash; <time datetime="">May 2004</time></dd>
+				</dl>
+			</section>
+
+			<section>
+				<h3><a href="http://www.dccc.edu/">Delaware County Community College</a></h3>
+
+				<dl>
+					<dt>Degree</dt> <dd>AS</dd>
+					<dt>Program</dt> <dd>Computer Science</dd>
+					<dt>Dates</dt> <dd><time datetime="">Sep 2001</time> &ndash; <time datetime="">May 2003</time></dd>
+				</dl>
+			</section>
+		</section>
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-9639324-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+	</body>
+</html>
