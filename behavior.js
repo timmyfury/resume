@@ -38,40 +38,31 @@
 	});
 
 	/*
-		Filter
-	**********************************************************************/
-	function Filter(opts){
-
-		this.opts = $.extend({
-			
-		}, opts);
-
-		return this;
-
-	}
-
-	(function(filterproto){
-
-		filterproto.toString = function(){ return "[object Filter]"; };
-
-	}(Filter.prototype));
-
-	window.Filter = Filter;
-
-	/*
-		Filter
+		Filtering
 	**********************************************************************/
 	$(function(){
 
-		var skills = $("#skills dt").getClasses();
-
-		for(var i = 0; i < skills.length; i++){
-			var skill = skills[i],
-				filters = $('dt.' + skill + ', ' + 'dd.' + skill),
-				label = $('dt.' + skill).text();
-
-			console.log(label, ' - ', skill, filters);
-		}
+		// var filters = $("#skills .filter");
+		// 
+		// filters.click(function(evt){
+		// 	
+		// 	var target = $(this),
+		// 		filters = target.data('filters').split(' '),
+		// 		hideFilters = _.map(filters, function(f){ return "." + f; }),
+		// 		hideSelector = ".competency:not(" + hideFilters.join(",") + ")",
+		// 		showFilters = _.map(filters, function(f){ return ".competency." + f; }),
+		// 		showSelector = showFilters.join(","),
+		// 
+		// 		experiences = $(".experience"),
+		// 		projects = $(".project");
+		// 	
+		// 	$(hideSelector).hide();
+		// 	$(showSelector).show();
+		// 
+		// 	experiences.hide().has(showSelector).show();
+		// 	projects.hide().has(showSelector).show();
+		// 
+		// });
 
 	});
 }(jQuery));

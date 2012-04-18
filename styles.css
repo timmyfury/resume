@@ -93,6 +93,10 @@ header a:visited {
 section {
 	margin: 30px auto;
 }
+section section {
+	margin: 10px 0;
+	padding: 0;
+}
 section h2 {
 	border-bottom: 1px #ccc solid;
 	color: #666;
@@ -103,14 +107,6 @@ section h2 {
 	text-align: right;
 	text-shadow: #ccc 1px 1px;
 	text-transform: uppercase;
-}
-section section {
-	border-bottom: 1px #ccc solid;
-	margin: 10px 0;
-	padding: 0;
-}
-section section:last-child {
-	border-bottom: 0 none;
 }
 section h3 {
 	color: #333;
@@ -187,6 +183,17 @@ section h4 a:visited {
 	color: #333;
 	text-decoration: none;
 }
+
+/*
+	Experience
+**********************************************************************/
+section .experience {
+	border-bottom: 1px #ccc solid;
+}
+section .experience:last-child {
+	border-bottom: 0 none;
+}
+
 
 /*
 	Skills
