@@ -1,0 +1,42 @@
+<section>
+	<h3>{% if work.url %}<a href="{{ work.url}}">{% endif %}{{ work.name }}{% if work.url %}</a>{% endif %}</h3>
+
+  {% if work.title or work.type or work.start or work.end %}
+	<dl>
+		{% if work.title %}<dt>Title</dt> <dd>{{ work.title }}</dd>{% endif %}
+		{% if work.type %}<dt>Type</dt> <dd>Freelance</dd>{% endif %}
+		{% if work.start or work.end %}<dt>Dates</dt> <dd>{% if work.start or work.end %}<time datetime="">{{ work.start }}</time>{% endif %}{% if work.start and work.end %} &ndash; {% endif %}{% if work.start or work.end %}<time datetime="">{{ work.end }}</time>{% endif %}</dd>{% endif %}
+	</dl>
+	{% endif %}
+
+  {% if work.description %}
+  <p>{{ work.description }}</p>
+  {% endif %}
+
+  {% if work.competencies %}
+  <ul>
+    {% for competency in work.competencies %}
+      {% include competency.html %}
+    {% endfor %}
+	</ul>
+  {% endif %}
+
+
+  {% if work.projects %}
+    {% for project in work.projects %}
+      <h4>{% if project.url %}<a href="{{ project.url}}">{% endif %}{{ project.name }}{% if project.url %}</a>{% endif %}</h4>
+    
+      {% if project.description %}
+      <p>{{ project.description }}</p>
+      {% endif %}
+    
+      {% if project.competencies %}
+      <ul>
+        {% for competency in project.competencies %}
+          {% include competency.html %}
+        {% endfor %}
+    	</ul>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</section>
