@@ -132,7 +132,7 @@ section section dl dd {
 section section dl dt {
 	font-size: 1em;
 	line-height: 1.4em;
-	margin: 2px 5px 0 0;
+	margin: 0 5px 0 0;
 }
 section section dl dd {
 	font-size: 1.2em;
@@ -198,18 +198,33 @@ section .experience:last-child {
 /*
 	Skills
 **********************************************************************/
-#skills dl {}
-#skills dt {
+#skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#skills li {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+#skills ul.filtering li {
+	opacity: 0.2;
+}
+#skills ul.filtering li.active-filter {
+	opacity: 1;
+}
+#skills li strong {
 	color: #333;
-	clear: left;
 	float: left;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: bold;
+	line-height: 1.4em;
 	margin: 4px 0 4px 20px;
 	text-shadow: #ccc 1px 1px;
-	width: 14em;
+	width: 10em;
 }
-#skills dd {
+#skills li span {
 	border: 1px #ccc solid;
 	border-radius: 3px;
 		-moz-border-radius: 3px;
@@ -217,11 +232,12 @@ section .experience:last-child {
 	color: #fff;
 	float: left;
     font-size: 1.2em;
+	font-weight: bold;
     line-height: 1.4em;
 	margin: 4px 0;
 	width: 30em;
 }
-#skills dd em {
+#skills li span em {
 	border-radius: 2px;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
@@ -239,6 +255,20 @@ section .experience:last-child {
 #skills .rating-8 em { background-color: #222; width: 24em; }
 #skills .rating-9 em { background-color: #111; width: 27em; }
 #skills .rating-10 em { background-color: #000;  }
+
+/*
+	Clearfix
+****************************************************************************************************/
+#skills li:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+#skills li {
+	zoom: 1;
+}
 
 /*
 	Media Queries
@@ -299,23 +329,29 @@ section .experience:last-child {
 	ul {
 		padding: 0 0 0 25px;
 	}
-	#skills dt {
-		margin: 4px 0;
-		width: 7.7em;
+	#skills ul {
+		padding: 0;
 	}
-	#skills dd {
-		margin: 5px 0;
-		width: 15em;
+	#skills li strong {
+		display: block;
+		float: none;
+		margin: 4px 0 0;
+		width: 20em;
 	}
-	#skills .rating-1 em { width: 1.5em; }
-	#skills .rating-2 em { width: 3em; }
-	#skills .rating-3 em { width: 4.5em; }
-	#skills .rating-4 em { width: 6em; }
-	#skills .rating-5 em { width: 7.5em; }
-	#skills .rating-6 em { width: 9em; }
-	#skills .rating-7 em { width: 10.5em; }
-	#skills .rating-8 em { width: 12em; }
-	#skills .rating-9 em { width: 13.5em; }
+	#skills li span {
+		clear: both;
+		margin: 0 0 5px;
+		width: 20em;
+	}
+	#skills .rating-1 em { width: 2em; }
+	#skills .rating-2 em { width: 4em; }
+	#skills .rating-3 em { width: 6em; }
+	#skills .rating-4 em { width: 8em; }
+	#skills .rating-5 em { width: 10em; }
+	#skills .rating-6 em { width: 12em; }
+	#skills .rating-7 em { width: 14em; }
+	#skills .rating-8 em { width: 16em; }
+	#skills .rating-9 em { width: 18em; }
 }
 
 
