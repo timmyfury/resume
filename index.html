@@ -14,6 +14,10 @@ skills:
     filters: css css3
     rating: 8
 
+  - title: DevOps/Amazon Web Services
+    filters: devops
+    rating: 4
+
   - title: Dojo Toolkit
     filters: dojo
     rating: 7
@@ -26,17 +30,17 @@ skills:
     filters: jquery
     rating: 8
 
-  - title: PHP/EE
+  - title: PHP
     filters: php ee
     rating: 5
 
   - title: Python/Django
     filters: python django
-    rating: 7
+    rating: 8
 
   - title: Requirements/Data Modeling
     filters: requirements data-modeling
-    rating: 6
+    rating: 7
 
   - title: Responsive Design
     filters: responsive
@@ -49,10 +53,6 @@ skills:
   - title: SVG/Canvas
     filters: svg canvas
     rating: 7
-
-  - title: System Administration
-    filters: sys-admin
-    rating: 4
 
   - title: xHTML/HTML5
     filters: xhtml html5 html
@@ -67,14 +67,25 @@ work:
     title: Senior Web Developer
     type: Full-time
     start: Oct 2010
-    end: present
+    end: Sep 2015
     competencies:
       - summary: Implemented ticketing and marketing features using the Django, Python Web framework.
-        tags: django python requirements dataa-modeling
-        items:
-          - name: Tracking Codes and Visitor Statistics
-          - name: Registration Forms
-          - name: Email Blast
+        tags: django python requirements data-modeling
+
+	  - summary: Architected and developed a queued email system which provided insight into delivery status, opened status, html output for a "Trouble Viewing" link, and bounced email blacklist management.
+	  - tags: python devops
+
+	  - summary: Modeled and developed visitor tracking system utilizing Amazon DynamoDB, Amazon Simple Queue Service (SQS) and MapReduce.
+	  - tags: python requirements data-modeling
+
+      - summary: Planned and developed OAuth abstraction system for implementation of third party API's including Facebook, Twitter and Instagram
+        tags: api python
+
+      - summary: Worked with deployment on Amazon Web Services using Elastic Load Balancing, Amazon Elastic Compute Cloud (EC2), Amazon Route 53 for DNS, Amazon Relational Database Service (RDS) and CloudFront for content delivery.
+        tags: api devops
+
+      - summary: Implemented an automated deployment process for marketing related content using Jekyll &mdash; a blog-aware, static site generator &mdash; allowing updates to marketing content to be updated and released independent of our main platform.
+        tags: python devops
 
       - summary: Developed namespace to encapsulate JavaScript modules for various uses.
         tags: javascript
@@ -86,7 +97,7 @@ work:
           - name: Components
             description: a general use class that provides a means of defining and encapsulating the JavaScript functionality of pages or shared components of pages. This limits the scope of selectors being used, reduces side effects of reusing code in a large application and manages the execution of onLoad events to reduce the overhead of JavaScript functionality overall.
 
-      - summary: Developed jQuery plugins that utilize progressive enhancement techniques.
+      - summary: Developed UI components that utilize progressive enhancement techniques.
         tags: javascript jquery
         items:
           - name: Credit card input
@@ -98,26 +109,8 @@ work:
           - name: Fancy Select
             description: an enhanced select box that converts the native select element into a list of radio or check boxes. This control includes, a contextual label that indicates what is selected, collapsible option groups, option filtering and buttons to select or unselect all visible options.
 
-      - summary: Integrated Facebook and Twitter APIs to integrate social functionality.
-        tags: api javascript python
-
-      - summary: Utilized CSS3 to replace image replacement to achieve aesthetic.
-        tags: css html
-
-      - summary: Designed and built mobile version of our app utilizing HTML5 and responsive design techniques.
+      - summary: Built mobile version of buyer facing pages within Ticketleap utilizing responsive design techniques.
         tags: css html responsive
-
-      - summary: Architected presentation layer patterns to easily manage a high volume of HTML, CSS, JavaScript and image assets.
-        tags: javascript css html
-
-      - summary: Integrated Amazon Web Services including Amazon Simple Queue Service (SQS), Amazon Simple Storage Service (S3), Amazon Simple Email Service (SES).
-        tags: api requirements
-
-      - summary: Worked with deployment on Amazon Web Services using Elastic Load Balancing, Amazon Elastic Compute Cloud (EC2), Amazon Route 53 for DNS, Amazon Relational Database Service (RDS) and CloudFront for content delivery.
-        tags: api sys-admin
-
-      - summary: Implemented an automated deployment process for marketing related content using Jekyll &mdash; a blog-aware, static site generator &mdash; allowing updates to marketing content to be updated and released independent of our main platform.
-        tags: python sys-admin
 
       - summary: Planned feature specifications based on requirements gathered from customers and internal stakeholders.
         tags: requirements
@@ -169,7 +162,7 @@ work:
             tags: ee php
 
           - summary: Provided automated deployment process.
-            tags: sys-admin ruby
+            tags: devops ruby
 
           - summary: Developed an ExpressionEngine extension that overrides the native pagination functionality to use the value in the get string for the page. <a href="http://github.com/timmyfury/EE-Query-String-Pagination">The source</a> is available on github.
             tags: ee php
@@ -324,12 +317,12 @@ work:
             tags: data-modeling rails ruby
 
           - summary: Managed hosting relationship and application deployment
-            tags: sys-admin
+            tags: devops
 
       - name: DecisionOne
         competencies:
           - summary: Installed, configured and customized Expression Engine content management system
-            tags: php ee sys-admin
+            tags: php ee devops
 
           - summary: Planned and executed presentation tier development
             tags: css html requirements
@@ -384,7 +377,7 @@ work:
             tags: data-modeling
 
           - summary: Deployed application
-            tags: sys-admin
+            tags: devops
 
           - summary: Developed business logic layer
             tags: rails ruby
@@ -417,7 +410,7 @@ work:
       - summary: Assisted in developing marketing efforts and maintained content of institution wide website
 
       - summary: Performed server administration duties
-        tags: sys-admin
+        tags: devops
 
       - summary: Planned, implemented and maintained multi-campus photo ID system
 
@@ -487,7 +480,7 @@ play:
     competencies:
       - summary: Conceived feature for the site.
       - summary: Developed Sinatra app.
-        tags: ruby sys-admin
+        tags: ruby devops
 
 
 
@@ -515,7 +508,7 @@ play:
     description: Canty Shanty is a simple site that I developed to help organize and share the immense collection of images I had collected for my home improvement inspiration.
     competencies:
       - summary: Deployed app using Heroku.
-        tags: sys-admin
+        tags: devops
 
       - summary: Developed Rails content management app.
         tags: rails ruby data-modeling
