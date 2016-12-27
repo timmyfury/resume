@@ -1,112 +1,89 @@
 ---
 layout: default
 
-skills:
-  - title: API Integration
-    filters: api
-    rating: 7
-
-  - title: C#/.Net
-    filters: c-sharp dot-net
-    rating: 2
-
-  - title: CSS/CSS3
-    filters: css css3
-    rating: 8
-
-  - title: DevOps/Amazon Web Services
-    filters: devops
-    rating: 4
-
-  - title: Dojo Toolkit
-    filters: dojo
-    rating: 7
-
-  - title: JavaScript
-    filters: javascript
-    rating: 9
-
-  - title: jQuery
-    filters: jquery
-    rating: 8
-
-  - title: PHP
-    filters: php ee
-    rating: 5
-
-  - title: Python/Django
-    filters: python django
-    rating: 8
-
-  - title: Requirements/Data Modeling
-    filters: requirements data-modeling
-    rating: 7
-
-  - title: Responsive Design
-    filters: responsive
-    rating: 5
-
-  - title: Ruby/Rails
-    filters: ruby rails
-    rating: 6
-
-  - title: SVG/Canvas
-    filters: svg canvas
-    rating: 7
-
-  - title: xHTML/HTML5
-    filters: xhtml html5 html
-    rating: 8
-
-
-
 
 work:
+
+  - name: Zoomi Inc
+    url: http://zoomiinc.com
+    title: Infrastructure Lead
+    type: Full-time
+    start: Oct 2015
+    end: present
+
+    competencies:
+      - Designed and evolved system architecture
+      - Migrated product from hosting.com to Amazon Web Services
+      - Managed release schedule between three product teams
+      - Modeled development, environment, branching and release process
+      - Implemented automated deployment process on Bamboo to AWS
+      - Implemented microservice using API Gateway and SQS to offload ingestion of clickstream data from primary API
+      - Deployed Scala program to Spark servers using Bamboo and AWS CodeDeploy
+      - Deployed primary API on Amazon EC2 and RDS
+      - Provided basic support, troubleshooting, and bug fixes for ETL programs written in Scala
+      - Used CloudFront CDN to tie together endpoints from varying services and providers
+      - Provided authenticated content protection using CloudFront CDN
+      - Utilized AWS EC2 and IAM to manage security and access rights for developers, testers and servers to servers and AWS services.
+      - Administered MongoDB replicasets
+      - Developed a simple MongoDB backup solution using Amazon EBS and Lambda
+      - Automated the spinup and teardown of development, testing and prototyping environments
+
+
+
+
+
+
+
+
+
   - name: TicketLeap
     url: http://www.ticketleap.com/
-    title: Python/Web Developer
+    title: Senior Web Developer
     type: Full-time
     start: Oct 2010
     end: Sep 2015
+
+    skills:
+        - django
+        - python
+        - requirements gathering
+        - data modeling
+        - API integration
+        - AWS
+        - ELB
+        - Route 53
+        - RDS
+        - EC2
+        - devops
+        - JavaScript
+        - jquery
+        - CSS
+        - agile process
+        - Elastic Map Reduce
+        - SQS
+        - SES
+        - DynamoDB
+
     competencies:
-      - summary: Implemented ticketing and marketing features using the Django, Python Web framework.
-        tags: django python requirements data-modeling
+      - Implemented ticketing and marketing features using the Django, Python Web framework.
+      - Architected and developed a queued email system which provided insight into delivery status, opened status, html output for a "Trouble Viewing" link, and bounced email blacklist management.
+      - Modeled and developed visitor tracking system utilizing Amazon DynamoDB, Amazon Simple Queue Service (SQS) and Elastic Map Reduce.
+      - Planned and developed OAuth abstraction system for implementation of third party API's including Facebook, Twitter and Instagram
+      - Worked with deployment on Amazon Web Services using Elastic Load Balancing, Amazon Elastic Compute Cloud (EC2), Amazon Route 53 for DNS, Amazon Relational Database Service (RDS) and CloudFront for content delivery.
+      - Implemented an automated deployment process for marketing related content using Jekyll &mdash; a blog-aware, static site generator &mdash; allowing updates to marketing content to be updated and released independent of our main platform.
+      - Developed namespace to encapsulate JavaScript modules focused on defering loading 3rd party libraries, limits the scope of selectors being used, reducing side effects of reusing code in a large application and managing the execution of onLoad events to reduce the overhead of JavaScript functionality overall and shortening the user's perceived load time of pages.
+      - Implemented complex multi-account google analytics tracking model 
+      - Developed UI components that utilize progressive enhancement techniques.
+      - Built mobile version of buyer facing pages within Ticketleap utilizing responsive design techniques.
+      - Planned feature specifications based on requirements gathered from customers and internal stakeholders.
+      - Helped mold agile development project management workflow allowing us to deliver new features every two &ndash; three weeks.
 
-      - summary: Architected and developed a queued email system which provided insight into delivery status, opened status, html output for a "Trouble Viewing" link, and bounced email blacklist management.
-        tags: python devops
 
-      - summary: Modeled and developed visitor tracking system utilizing Amazon DynamoDB, Amazon Simple Queue Service (SQS) and MapReduce.
-        tags: python requirements data-modeling
 
-      - summary: Planned and developed OAuth abstraction system for implementation of third party API's including Facebook, Twitter and Instagram
-        tags: api python
 
-      - summary: Worked with deployment on Amazon Web Services using Elastic Load Balancing, Amazon Elastic Compute Cloud (EC2), Amazon Route 53 for DNS, Amazon Relational Database Service (RDS) and CloudFront for content delivery.
-        tags: api devops
 
-      - summary: Implemented an automated deployment process for marketing related content using Jekyll &mdash; a blog-aware, static site generator &mdash; allowing updates to marketing content to be updated and released independent of our main platform.
-        tags: python devops
 
-      - summary: Developed namespace to encapsulate JavaScript modules for various uses.
-        tags: javascript
-        items:
-          - name: Configuration
-            description: a module that allows values to be accessed globally and allows other components and plugins to trigger actions asynchronously once particular values have been set. This utilizes the publish/subscribe event model.
-          - name: Analytics
-            description: this module defers the loading of and logging to Google Analytics to prevent the Google Analytics library from slowing down the loading of our app and shortening the user's perceived load time of pages.
-          - name: Components
-            description: a general use class that provides a means of defining and encapsulating the JavaScript functionality of pages or shared components of pages. This limits the scope of selectors being used, reduces side effects of reusing code in a large application and manages the execution of onLoad events to reduce the overhead of JavaScript functionality overall.
 
-      - summary: Developed UI components that utilize progressive enhancement techniques.
-        tags: javascript jquery
-
-      - summary: Built mobile version of buyer facing pages within Ticketleap utilizing responsive design techniques.
-        tags: css html responsive
-
-      - summary: Planned feature specifications based on requirements gathered from customers and internal stakeholders.
-        tags: requirements
-
-      - summary: Helped mold agile development project management workflow allowing us to deliver new features every two &ndash; three weeks.
 
 
 
@@ -116,59 +93,56 @@ work:
     type: Freelance
     start: May 2010
     end: present
-    competencies:
-      - summary: Managed client relationships.
-      - summary: Established delivery schedules.
-      - summary: Worked with freelancers to complete contracted work.
-      - summary: Submitted invoices and managed financial aspects of the company.
-      - summary: Wrote statements of work.
-    projects:
 
+    skills:
+        - JavaScript
+        - Dojo
+        - CSS
+        - C#/.Net
+        - requirements gathering
+        - Ruby/Rails
+        - JQuery/JQuery Mobile
+        - PHP
+        - ExpressionEngine
+
+    competencies:
+      - Managed client relationships.
+      - Established delivery schedules.
+      - Worked with freelancers to complete contracted work.
+      - Submitted invoices and managed financial aspects of the company.
+      - Wrote statements of work.
+
+    projects:
       - name: Automated Data Processing Inc.
         competencies:
-          - summary: Evangelized the adoption of the Revolution UI standards and widget library.
-          - summary: Evangelized the benefits of and adherence to web standards.
-          - summary: Consulted with internal development teams to assist in planning the integration of the Revolution UI Library into existing development environments varying from Java to .NET.
-            tags: requirements
-
-          - summary: Developed custom widgets using the Dojo JavaScript Toolkit and the Dijit widget system.
-            tags: javascript dojo css
-            items:
-              - name: Wizard
-              - name: DualMultiSelect
-              - name: App
+          - Evangelized the adoption of the Revolution UI standards and widget library.
+          - Evangelized the benefits of and adherence to web standards.
+          - Consulted with internal development teams to assist in planning the integration of the Revolution UI Library into existing development environments varying from Java to .NET.
+          - Developed custom widgets using the Dojo JavaScript Toolkit and the Dijit widget system.
 
       - name: TBC Corporation
         competencies:
-          - summary: Developed C#/.Net site core that allowed seven basic marketing sites to be implemented using an identical codebase with a simple configuration changes.
-            tags: c-sharp dot-net
-
-          - summary: Converted comps to xHTML/CSS. All seven sites used identical markup but different stylesheets.
-            tags: html css
+          - Developed C#/.Net site core that allowed seven basic marketing sites to be implemented using an identical codebase with a simple configuration changes.
+          - Converted comps to xHTML/CSS. All seven sites used identical markup but different stylesheets.
 
       - name: National Organization on Disability
         url: http://nod.org/
         competencies:
-          - summary: Implemented ExpressionEngine 1.7.
-            tags: ee php
+          - Implemented ExpressionEngine 1.7.
+          - Provided automated deployment process.
+          - Developed an ExpressionEngine extension that overrides the native pagination functionality to use the value in the get string for the page. <a href="http://github.com/timmyfury/EE-Query-String-Pagination">The source</a> is available on github.
 
-          - summary: Provided automated deployment process.
-            tags: devops ruby
-
-          - summary: Developed an ExpressionEngine extension that overrides the native pagination functionality to use the value in the get string for the page. <a href="http://github.com/timmyfury/EE-Query-String-Pagination">The source</a> is available on github.
-            tags: ee php
+      - name: Live Free Ride Alive
+        url: http://www.livefreeridealive.com/
+        competencies:
+          - Implemented mobile version of the site using jQuery Mobile.
 
       - name: John Sterling Ruth Photography
         url: http://johnsterlingruth.com/
         competencies:
-          - summary: Developed a simple admin for managing images, videos and galleries.
-            tags: rails
-
-          - summary: Provided XML API interface for flash based version of the site.
-            tags: rails
-
-          - summary: Implemented mobile version of the site using jQuery Mobile.
-            tags: jquery responsive
+          - Developed a simple admin for managing images, videos and galleries.
+          - Provided XML API interface for flash based version of the site.
+          - Implemented mobile version of the site using jQuery Mobile.
 
 
 
@@ -181,57 +155,55 @@ work:
     type: Contract
     start: Aug 2009
     end: May 2010
+
+    skills:
+      - JavaScript
+      - Dojo
+      - CSS
+      - requirements gathering
+      - JQuery
+
     projects:
       - name: Automated Data Processing Inc.
         competencies:
-          - summary: Implemented UI component library using Dojo JavaScript Framework
-            tags: javascript dojo css
-
-          - summary: Produced extensive documentation site and example library to help kickstart implementation.
-
-          - summary: Extended the entire Dijit widget library and a significant amount of the Dojox widget library into a custom namespace to ensure forward compatibility and enforcement of Revolution UI standards.
-            tags: javascript dojo css
-
-          - summary: Gathered full business requirements based on UI concept screens.
-            tags: requirements
-
-          - summary: Developed custom Dijit widgets for implementation in diverse environments
-            tags: javascript dojo css
-            items:
-              - name: MegaMenu
-              - name: Shell
-              - name: AppContainer
+          - Implemented UI component library using Dojo JavaScript Framework
+          - Produced extensive documentation site and example library to help kickstart implementation.
+          - Extended the entire Dijit widget library and a significant amount of the Dojox widget library into a custom namespace to ensure forward compatibility and enforcement of Revolution UI standards.
+          - Gathered full business requirements based on UI concept screens.
+          - Developed custom Dijit widgets for implementation in diverse environments
 
       - name: Build-a-Bear Workshop
         competencies:
-          - summary: Converted comps to xHTML/CSS
-            tags: css html
-
-          - summary: Developed jQuery plug-ins
-            tags: jquery javascript
+          - Converted comps to xHTML/CSS
+          - Developed jQuery plug-ins
 
       - name: Daily Kos
         competencies:
-          - summary: Converted Photoshop comps to xHTML/CSS
-            tags: css html
+          - Converted Photoshop comps to xHTML/CSS
+
 
 
 
 
   - name: Gamervision LLC
     url: http://gamervision.com/
-    title: Ruby Developer, Engineer
+    title: Senior Ruby Developer
     type: Full-time
     start: Oct 2008
     end: Aug 2009
+
+    skills:
+        - requirements gathering
+        - data modeling
+        - Ruby/Rails
+
     competencies:
-      - summary: Negotiated contracts
-      - summary: Planned and implemented API integration with Viddler video service.
-        tags: api
-      - summary: Developed data acquisition module for extensive game database
-        tags: api data-modeling requirements
-      - summary: Implemented agile development workflow
-      - summary: Designed ad sales packages and sold ads
+      - Negotiated contracts
+      - Planned and implemented API integration with Viddler video service.
+      - Developed data acquisition model for extensive game database
+      - Implemented automated deployment on EngineYard
+      - Implemented agile development workflow
+      - Designed ad sales packages and sold ads
 
 
 
@@ -239,30 +211,30 @@ work:
 
   - name: Empathy Lab
     url: http://www.empathylab.com/
-    title: PHP Developer
+    title: Senior PHP Developer
     type: Contract
     start: Apr 2008
     end: Oct 2008
+
+    skills:
+      - PHP
+      - SOAP
+      - JavaScript
+      - API integration
+
     projects:
       - name: MTV Networks
-      - description: Developed social network called ilovetv.com for VH1. The project never launched.
       - competencies:
-        - summary: Integrated with REST API for Flux user authentication system
-          tags: api php
+        - Developed social network called ilovetv.com for VH1. The project never launched.
+        - Integrated with REST API for Flux user authentication system
+        - JavaScript API for Flux UGC contribution library
+        - SOAP API for Crowd Factory Community Platform
+        - Google Search Appliance API
+        - Designed and developed simple PHP MVC framework
+        - Managed client relationship
 
-        - summary: JavaScript API for Flux UGC contribution library
-          tags: api javascript
 
-        - summary: SOAP API for Crowd Factory Community Platform
-          tags: api php
 
-        - summary: Google Search Appliance API
-          tags: api php
-
-        - summary: Designed and developed simple PHP MVC framework
-          tags: php
-
-        - summary: Managed client relationship
 
 
 
@@ -275,11 +247,10 @@ work:
     start: Feb 2008
     end: Apr 2008
     competencies:
-      - summary: Converted Photoshop comps to XHTML/CSS
-        tags: xhtml css
+      - Converted Photoshop comps to XHTML/CSS
+      - Developed jQuery plug-ins
 
-      - summary: Developed jQuery plug-ins
-        tags: jquery javascript
+
 
 
 
@@ -290,88 +261,58 @@ work:
     type: Full-time
     start: Apr 2006
     end: Feb 2008
+
     competencies:
-      - summary: Implemented source control system
-      - summary: Mentored and trained new hire, junior and intern developers
-      - summary: Researched and learned new technologies
-      - summary: Competed in Microsoft sponsored Silverlight competition, Phizzpop
-      - summary: Received co-worker recognition with awarding of Electronic Ink Innovation Award
+      - Implemented source control system
+      - Mentored and trained new hire, junior and intern developers
+      - Researched and learned new technologies
+      - Competed in Microsoft sponsored Silverlight competition, Phizzpop
+      - Received co-worker recognition with awarding of Electronic Ink Innovation Award
 
     projects:
       - name: Gamervision LLC
         url: http://gamervision.com/
         competencies:
-          - summary: Gathered and analyzed user requirements and wrote functional specification
-            tags: requirements
-
-          - summary: Architected data and business logic layers of social networking application
-            tags: data-modeling rails ruby
-
-          - summary: Managed hosting relationship and application deployment
-            tags: devops
+          - Gathered and analyzed user requirements
+          - Wrote functional specifications
+          - Architected data and business logic layers of social networking application Using Ruby on Rails
+          - Managed hosting relationship and application deployment
 
       - name: DecisionOne
         competencies:
-          - summary: Installed, configured and customized Expression Engine content management system
-            tags: php ee devops
-
-          - summary: Planned and executed presentation tier development
-            tags: css html requirements
-
-          - summary: Integrated Great Plains HRMS API
-            tags: php api
+          - Installed, configured and customized ExpressionEngine content management system
+          - Planned and executed presentation tier development
+          - Integrated Great Plains HRMS API
 
       - name: MetroCorp Marketing
         competencies:
-          - summary: Implemented and customized Expression Engine content management system
-            tags: php ee
-
-          - summary: Converted design comps into XHTML/CSS templates
-            tags: html css
-
-          - summary: Managed client relationship
+          - Implemented and customized Expression Engine content management system
+          - Converted design comps into XHTML/CSS templates
+          - Managed client relationship
 
       - name: Bryn Mawr College
         competencies:
-          - summary: Developed XHTML/CSS templates
-            tags: html css
-
-          - summary: Implemented custom select control with JavaScript and CSS
-            tags: jquery javascript
-
-          - summary: Developed jQuery plug-ins
-            tags: jquery javascript
+          - Developed XHTML/CSS templates
+          - Implemented custom controls with JavaScript and CSS
+          - Developed jQuery plug-ins
 
       - name: Magee Rehabilitation
         competencies:
-          - summary: Conducted user interviews and focus groups and participated in user observation
-            tags: requirements
-
-          - summary: Gathered Requirements and inventory of data generation points
-            tags: requirements
-
-          - summary: Evaluated current state of data collection
-            tags: requirements
-
-          - summary: Researched and recommended technologies and processes to streamline workflow
+          - Conducted user interviews and focus groups and participated in user observation
+          - Gathered Requirements and inventory of data generation points
+          - Evaluated current state of data collection
+          - Researched and recommended technologies and processes to streamline workflow
 
       - name: Penske Truck Leasing
         competencies:
-          - summary: Evaluated design deliverables for implementability and technical limitations
+          - Evaluated design deliverables for implementability and technical limitations
 
       - name: Electronic Ink Estimator
         competencies:
-          - summary: Gathered feature requirements and translated them into functionality
-            tags: requirements
-
-          - summary: Designed Database schema
-            tags: data-modeling
-
-          - summary: Deployed application
-            tags: devops
-
-          - summary: Developed business logic layer
-            tags: rails ruby
+          - Gathered feature requirements and translated them into functionality
+          - Designed Database schema
+          - Deployed application
+          - Developed business logic layer
 
 
 
@@ -387,29 +328,16 @@ work:
     start: Aug 2004
     end: Apr 2006
     competencies:
-      - summary: Analyzed user requirements, planned information architecture scheme and guided visual style
-        tags: requirements data-modeling
-
-      - summary: Developed and implemented content administration modules
-        tags: php
-
-      - summary: Designed and Developed multimedia tutorials and virtual tours with Flash
-
-      - summary: Integrated external content via RSS and Google Maps API
-        tags: api
-
-      - summary: Assisted in developing marketing efforts and maintained content of institution wide website
-
-      - summary: Performed server administration duties
-        tags: devops
-
-      - summary: Planned, implemented and maintained multi-campus photo ID system
-
-      - summary: Mentored and trained new hire, junior and intern developers
-
-      - summary: Trained faculty and staff in basic computing concepts, HTML and other web related technologies
-
-      - summary: Promoted from Multimedia Technology Support Specialist in August 2004
+      - Analyzed user requirements, planned information architecture scheme and guided visual style
+      - Developed and implemented content administration modules
+      - Designed and Developed multimedia tutorials and virtual tours with Flash
+      - Integrated external content via RSS and Google Maps API
+      - Assisted in developing marketing efforts and maintained content of institution wide website
+      - Performed server administration duties
+      - Planned, implemented and maintained multi-campus photo ID system
+      - Mentored and trained new hire, junior and intern developers
+      - Trained faculty and staff in basic computing concepts, HTML and other web related technologies
+      - Promoted from Multimedia Technology Support Specialist in August 2004
 
 
 
@@ -426,14 +354,14 @@ work:
     start: Oct 2000
     end: April 2006
     competencies:
-      - summary: Delivered welcome address to parents and children spending the night in the museum.
-      - summary: Coordinated the schedules and movement of up to 700 campers per night.
-      - summary: Performed educational science shows.
-      - summary: Managed 15-20 staff per night.
-      - summary: Yelled at a lot of children
-      - summary: Provided first aid to campers.
-      - summary: Made coffee.
-      - summary: Slept on the floor of the museum.
+      - Delivered welcome address to parents and children spending the night in the museum.
+      - Coordinated the schedules and movement of up to 700 campers per night.
+      - Performed educational science shows.
+      - Managed 15-20 staff per night.
+      - Yelled at a lot of children
+      - Provided first aid to campers.
+      - Made coffee.
+      - Slept on the floor of the museum.
 
 
 

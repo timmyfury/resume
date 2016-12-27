@@ -1,39 +1,41 @@
 <section class="experience">
-	<h3>{% if experience.url %}<a href="{{ experience.url}}">{% endif %}{{ experience.name }}{% if experience.url %}</a>{% endif %}</h3>
+    <h3>{% if experience.url %}<a href="{{ experience.url}}">{% endif %}{{ experience.name }}{% if experience.url %}</a>{% endif %}</h3>
 
   {% if experience.title or experience.type or experience.start or experience.end %}
-	<dl>
-		{% if experience.title %}
-		  <dt>Title</dt>
-		  <dd>{{ experience.title }}</dd>
-		{% endif %}
+    <dl>
+        {% if experience.title %}
+          <dt>Title</dt>
+          <dd>{{ experience.title }}</dd>
+        {% endif %}
 
-		{% if experience.type %}
-  		<dt>Type</dt>
-  		<dd>{{ experience.type }}</dd>
-		{% endif %}
+        {% if experience.type %}
+          <dt>Type</dt>
+          <dd>{{ experience.type }}</dd>
+        {% endif %}
 
-		{% if experience.start or experience.end %}
-		  <dt>Dates</dt>
-		  <dd>
-		    {% if experience.start or experience.end %}<time datetime="">{{ experience.start }}</time>{% endif %}
-		    {% if experience.start and experience.end %} &ndash; {% endif %}
-		    {% if experience.start or experience.end %}<time datetime="">{{ experience.end }}</time>{% endif %}
-		  </dd>
-		{% endif %}
-	</dl>
-	{% endif %}
+        {% if experience.start or experience.end %}
+          <dt>Dates</dt>
+          <dd>
+            {% if experience.start or experience.end %}<time datetime="">{{ experience.start }}</time>{% endif %}
+            {% if experience.start and experience.end %} &ndash; {% endif %}
+            {% if experience.start or experience.end %}<time datetime="">{{ experience.end }}</time>{% endif %}
+          </dd>
+        {% endif %}
+    </dl>
+    {% endif %}
 
   {% if experience.description %}
   <p>{{ experience.description }}</p>
   {% endif %}
+
+
 
   {% if experience.competencies %}
   <ul>
     {% for competency in experience.competencies %}
       {% include competency.html %}
     {% endfor %}
-	</ul>
+    </ul>
   {% endif %}
 
 
@@ -51,7 +53,7 @@
           {% for competency in project.competencies %}
             {% include competency.html %}
           {% endfor %}
-      	</ul>
+          </ul>
         {% endif %}
       </section>
     {% endfor %}
