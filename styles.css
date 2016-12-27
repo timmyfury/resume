@@ -23,6 +23,7 @@ footer:after {
     visibility: hidden;
 }
 
+
 /*
     Headings
 **********************************************************************/
@@ -198,34 +199,12 @@ section .experience:last-child {
 /*
     Media Queries
 **********************************************************************/
-@media screen and (max-width: 600px) {}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     header img {
-        display: block;
-        float: left;
-        height: 135px;
-        margin: 0 20px 20px 0;
-        width: 135px;
+        display: none;
     }
-    section dt {
-        clear: both;
-        padding-top: 1px;
-    }
-}
-
-@media screen and (max-width: 400px) {}
-
-@media screen and (max-width: 320px) {
-    header {
-        text-align: right;
-    }
-    header img {
-        display: block;
-        float: right;
-        height: 200px;
-        margin: 0 0 20px;
-        width: 200px;
+    header hgroup {
+        text-align: left;
     }
     section dt {
         clear: both;
@@ -238,6 +217,10 @@ section .experience:last-child {
         padding: 0 0 0 25px;
     }
 }
+
+@media screen and (max-width: 480px) {}
+@media screen and (max-width: 400px) {}
+@media screen and (max-width: 320px) {}
 
 
 
